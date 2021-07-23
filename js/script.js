@@ -2,7 +2,7 @@
 
 let randomNumber = Math.floor(Math.random() * 3 + 1);
 
-console.log('Wylosowana liczba to: ' + randomNumber);
+console.log('Random number is: ' + randomNumber);
 
 /* Computer move */
 
@@ -20,8 +20,6 @@ if (randomNumber === 1) {
 
     computerMove = 'scissors';
 }
-
-console.log('ruch komputera ' + computerMove);
 
 printMessage(`My move: ${computerMove}`);
 
@@ -51,8 +49,42 @@ if (isNaN(playerMove)) {
         alert('Choose number from 1 to 3');
     }
 
-    console.log('ruch gracza ' + playerMove);
     printMessage(`Youre move is: ${playerMove}`);
 
+
 }
+
+/* Result */
+
+if (playerMove === 'rock' && computerMove === 'paper') {
+
+    printMessage('You loose');
+
+} else if (playerMove === 'rock' && computerMove === 'scissors') {
+
+    printMessage('You won');
+
+} else if (playerMove === 'paper' && computerMove === 'rock') {
+
+    printMessage('You won');
+
+} else if (playerMove === 'paper' && computerMove === 'scissors') {
+
+    printMessage('You loose');
+
+} else if (playerMove === 'scissors' && computerMove === 'rock') {
+
+    printMessage('You loose');
+
+} else if (playerMove === 'scissors' && computerMove === 'paper') {
+
+    printMessage('You won');
+
+} else if (playerMove === computerMove) {
+
+    printMessage('DRAW')
+
+} else
+
+    printMessage(' Choose number 1, 2 or 3 ')
 
