@@ -5,27 +5,73 @@
     <meta charset="UTF-8">
     <title>Kamień, papier, nożyce</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <div id="buttons">
-            <button id="play-rock">
-                <i class="fas fa-hand-rock"></i>
-                <p>rock</p>
-            </button>
-            <button id="play-paper">
-                <i class="fas fa-hand-paper"></i>
-                <p>paper</p>
-            </button>
-            <button id="play-scissors">
-                <i class="fas fa-hand-scissors"></i>
-                <p>scissors</p>
-            </button>
+
+    <section class="information">
+        <div class="wrapper-inf">
+            <p>
+                The rules remain the same as the original game: Rock beats scissors, Scissors beats paper and paper
+                beats rock. The rules are easy, the game is simple, the fun continues in this online version of the
+                absolute classic game.
+
+                Pick one of the hand symbol and play with computer.
+            </p>
+            <h3 class="btn-rules"> How to play</h3>
         </div>
+        <div class="wrapper-inf">
+            <p> Rock Paper Scissors is the classic playground game converted into a fun online multiplayer game.
+                Have you ever had a dispute or disagreement where you and a friend cannot decide who is right and
+                who is wrong? If so then you have probably settled it by playing rock paper scissors.</p>
+            <h3 class="btn-rules">About game</h3>
+        </div>
+        </div>
+    </section>
+    <section class="board">
+        <div class="image-wrapper">
+            <img src="img/scissors-rock.jpg" alt="scissors-rock">
+            <h1 class="rock">Rock</h1>
+            <h1 class="paper">Paper</h1>
+            <h1 class="scissors">Scissors</h1>
+        </div>
+        <div class="result">
+            <h1>Paper beats rock.</h1>
+            <p>You Win</p>
+
+            <div class="buttons" id="buttons">
+                <div id="play-rock">
+                    <i class="fas fa-hand-rock"></i>
+                </div>
+                <div id="play-paper">
+                    <i class="fas fa-hand-paper"></i>
+                </div>
+                <div id="play-scissors">
+                    <i class="fas fa-hand-scissors"></i>
+                </div>
+
+            </div>
+            <!-- <h2>hoose your move</h2> -->
+
+        </div>
+        <!-- </div>
+        </div> -->
+
+
+
+
+
+
+    </section>
+    <!-- <div class="container">
+
+
         <div id="messages"></div>
-    </div>
+    </div> -->
     <script src="js/functions.js"></script>
     <script src="js/script.js"></script>
 </body>
