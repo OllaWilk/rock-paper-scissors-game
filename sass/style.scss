@@ -107,61 +107,21 @@ body {
     }
     .game-title-wrapper {
         background-color: transparent;
+        justify-content: space-between;
+        top: 35%;
         .rock, .paper, .scissors {
                     font-size: 80px;
                     line-height: 80px;
                     margin: 0;
-                    position: absolute;
-                    z-index: 2;
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        left: 110%;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        height: 6px;
-                        background-color: $color-light;
-                        height: 6px;
-                    }
-
         }
 
-            .rock {
-            top: -30%;
-            left: 0;
-
-            &::before {
-                left: 115%;
-                top: 55%;
-                width: 60%;
-
-              }
-        }
          .paper {
-            top: -12%;
-            right: 0;
             color: $color-main;
-
-            &::before {
-                left: 2%;
-                top: 101%;
-                width: 39%;
-            }
         }
 
         .scissors {
-            bottom: -9%;
-            left: 50%;
-            transform: translateX(-40%);
             color: $color-main;
 
-
-            &::before {
-                left: 40%;
-                top: 16%;
-                width: 30%;
-
-            }
         }
     }
 
