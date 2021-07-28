@@ -33,17 +33,29 @@
         </div>
     </section>
     <section class="board">
+
         <div class="image-wrapper">
-            <img src="img/scissors-rock.jpg" alt="scissors-rock">
+            <div class="img-left">
+                <img src="img/papper.png" alt="paper">
+            </div>
+            <div class="img-right">
+                <img src="img/rock.png" alt="rock">
+            </div>
+        </div>
+        <div class="game-title-wrapper">
             <h1 class="rock">Rock</h1>
-            <h1 class="paper">Paper</h1>
             <h1 class="scissors">Scissors</h1>
+            <h1 class="paper">Paper</h1>
+        </div>
         </div>
         <div class="result">
-            <h1>Paper beats rock.</h1>
-            <p>You Win</p>
-
+            <div class="result-wrap">
+                <h1>Rock beats scissors. You Loose !</h1>
+                <p>You: 0</p>
+                <p>Computer: 0</p>
+            </div>
             <div class="buttons" id="buttons">
+                <h2>Choose your move:</h2>
                 <div id="play-rock">
                     <i class="fas fa-hand-rock"></i>
                 </div>
@@ -53,25 +65,14 @@
                 <div id="play-scissors">
                     <i class="fas fa-hand-scissors"></i>
                 </div>
-
             </div>
-            <!-- <h2>hoose your move</h2> -->
-
         </div>
-        <!-- </div>
-        </div> -->
-
-
-
-
-
-
     </section>
-    <!-- <div class="container">
-
-
-        <div id="messages"></div>
-    </div> -->
+    <section class="socialmedia">
+        <p class="btn-rules"> Facebook</p>
+        <p class="btn-rules">Twitter</p>
+        <p class="btn-rules">Instagram</p>
+    </section>
     <script src="js/functions.js"></script>
     <script src="js/script.js"></script>
 </body>
