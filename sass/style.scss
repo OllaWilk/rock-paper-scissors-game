@@ -35,7 +35,7 @@ body {
             height: 50vh;
             align-items: center;
             padding: 20px;
-            transform: translateX(-80%);
+            transform: translateX(-85%);
             transition: linear .3s;
             cursor: pointer;
             z-index: 1;
@@ -65,12 +65,13 @@ body {
             p{
                 padding: 0 50px;
             }
-
             &:hover {
-                transform: translateX(0);
-
+                transform: translateX(0%);
             }
+
+
         }
+
 }
 
 

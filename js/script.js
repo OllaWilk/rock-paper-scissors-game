@@ -70,3 +70,4 @@
     paper.addEventListener('click', () => playGame(2));
     scissors.addEventListener('click', () => playGame(3));
 }
+

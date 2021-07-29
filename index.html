@@ -14,7 +14,7 @@
 <body>
 
     <section class="information">
-        <div class="wrapper-inf">
+        <div class="wrapper-inf visible">
             <p>
                 The rules remain the same as the original game: Rock beats scissors, Scissors beats paper and paper
                 beats rock. The rules are easy, the game is simple, the fun continues in this online version of the
@@ -22,7 +22,7 @@
 
                 Pick one of the hand symbol and play with computer.
             </p>
-            <h3 class="btn-rules"> How to play</h3>
+            <h3 class="btn-rules" id="informationBtn"> How to play</h3>
         </div>
         <div class="wrapper-inf">
             <p> Rock Paper Scissors is the classic playground game converted into a fun online multiplayer game.
@@ -35,11 +35,11 @@
     <section class="board">
 
         <div class="image-wrapper">
-            <div class="img-left">
-                <img src="img/papper.png" alt="paper">
+            <div class="img-left" data-summary="" computer-choice">
+                <img src="img/rock.png" alt="paper">
             </div>
-            <div class="img-right">
-                <img src="img/rock.png" alt="rock">
+            <div class="img-right" data-summary="your-choice">
+                <img src="img/scissors.png" alt="rock">
             </div>
         </div>
         <div class="game-title-wrapper">
@@ -58,13 +58,13 @@
             <div class="buttons" id="buttons">
                 <h2>Choose your move:</h2>
                 <div id="play-rock">
-                    <i class="fas fa-hand-rock"></i>
+                    <i class="fas fa-hand-rock" data-option="rock"></i>
                 </div>
                 <div id="play-paper">
-                    <i class="fas fa-hand-paper"></i>
+                    <i class="fas fa-hand-paper" data-option="paper"></i>
                 </div>
                 <div id="play-scissors">
-                    <i class="fas fa-hand-scissors"></i>
+                    <i class="fas fa-hand-scissors" data-option="scissors"></i>
                 </div>
             </div>
         </div>
