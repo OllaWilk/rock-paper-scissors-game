@@ -21,8 +21,9 @@ const hands = [...document.querySelectorAll('.buttons i')];
 
 function handSelection() {
     console.log(this);
+    game.playerHand = this.dataset.option
 
-
+    console.log(game.playerHand);
 
 }
 
