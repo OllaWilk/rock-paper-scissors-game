@@ -1,5 +1,23 @@
-/*1*/
-/*Create object for game result and game summary*/
+// class GameMove {
+
+//     constructor(move, img) {
+//         this.move = move;
+//         this.img = img;
+//     }
+
+// }
+
+// const rock = new GameMove('rock', 'img/rock.png');
+// const paper = new GameMove('rock', 'img/papper.png');
+// const scissors = new GameMove('rock', 'img/scissors.png');
+
+
+// class Game {
+//     constructor(playerChoice, aiChoice) {
+//         this.playerChoice = playerChoice;
+//         this.aiChoice = aiChoice;
+//     }
+// }
 
 const gameSummary = {
 
@@ -10,16 +28,17 @@ const gameSummary = {
 }
 
 const game = {
-    playerHand: null,
-    aiHand: null,
+    playerHand: '',
+    aiHand: '',
 }
-
 /*Get Html elements of player move and add player moove*/
 
 const hands = [...document.querySelectorAll('.buttons i')];
+const imgHand = ['img/rock.png', 'img/papper.png', 'img/scissors.png'];
 
-function handSelection() {
-    console.log(this);
+function playerChoice() {
+
+    console.log('this', this);
     game.playerHand = this.dataset.option
     console.log(game.playerHand);
 
@@ -28,8 +47,27 @@ function handSelection() {
     this.style.color = 'white';
     this.style.backgroundColor = '#7b6766';
 
+
+}
+function aiChoice() {
+
+    //const aiHand = ;?
+    return aiHand
+
 }
 
+
+function startGame() {
+    console.log('start gry')
+
+    if (!game.playerHand) {
+        return alert('Choose your move');
+    }
+
+    game.aiHand = aiChoice()
+}
+
+document.querySelector('.socialmedia').addEventListener('click', startGame)
 
 hands.forEach(hand => hand.addEventListener('click', handSelection));
 

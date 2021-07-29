@@ -18,6 +18,21 @@ infBtns.forEach(infBtn =>
         console.log(this);
 
         infBtn.classList.toggle('visible');
-
     })
 )
+
+function insertImage(imgPath) {
+    const imgPlace = document.querySelector('.img-left');
+
+    let img = document.createElement('img');
+    img.src = imgPath;
+    imgPlace.appendChild(img);
+
+}
+
+const moves = [['rock', 'img/rock.png'], ['paper', 'img/papper.png']]
+const imgPaper = 'img/papper.png';
+// const imgRock = 'img/rock.png';
+const imgScissors = 'img/scissors.png'
+insertImage(imgScissors)
+
