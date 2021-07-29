@@ -63,7 +63,7 @@ body {
   padding: 0 50px;
 }
 
-.information .wrapper-inf:hover {
+.information .visible {
   transform: translateX(0%);
 }
 

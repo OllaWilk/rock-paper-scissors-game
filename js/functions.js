@@ -1,10 +1,4 @@
-const infBtns = document.querySelector('.wrapper-inf');
 
-infBtns.addEventListener('click', () => {
-    console.log('klik');
-    infBtns.classList.toggle('visible')
-    // infBtns.forEach(infBtn => { console.log('klik') })
-})
 
 function printMessage(msg) {
     let div = document.createElement('div');
@@ -15,3 +9,15 @@ function printMessage(msg) {
 function clearMessages() {
     document.getElementById('messages').innerHTML = '';
 }
+
+/* Add eventListener to information buttons"*/
+const infBtns = [...document.querySelectorAll('.wrapper-inf')];
+
+infBtns.forEach(infBtn =>
+    infBtn.addEventListener('click', function () {
+        console.log(this);
+
+        infBtn.classList.toggle('visible');
+
+    })
+)

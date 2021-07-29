@@ -14,7 +14,7 @@
 <body>
 
     <section class="information">
-        <div class="wrapper-inf visible">
+        <div class="wrapper-inf ">
             <p>
                 The rules remain the same as the original game: Rock beats scissors, Scissors beats paper and paper
                 beats rock. The rules are easy, the game is simple, the fun continues in this online version of the
@@ -24,7 +24,7 @@
             </p>
             <h3 class="btn-rules" id="informationBtn"> How to play</h3>
         </div>
-        <div class="wrapper-inf">
+        <div class="wrapper-inf ">
             <p> Rock Paper Scissors is the classic playground game converted into a fun online multiplayer game.
                 Have you ever had a dispute or disagreement where you and a friend cannot decide who is right and
                 who is wrong? If so then you have probably settled it by playing rock paper scissors.</p>
@@ -33,9 +33,8 @@
         </div>
     </section>
     <section class="board">
-
         <div class="image-wrapper">
-            <div class="img-left" data-summary="" computer-choice">
+            <div class="img-left" data-summary="computer-choice">
                 <img src="img/rock.png" alt="paper">
             </div>
             <div class="img-right" data-summary="your-choice">
@@ -46,33 +45,27 @@
             <h1 class="rock">Rock</h1>
             <h1 class="paper">Paper</h1>
             <h1 class="scissors">Scissors</h1>
-
         </div>
         </div>
         <div class="result">
             <div class="result-wrap">
                 <h1>Rock beats scissors. You Loose !</h1>
-                <p>You: 0</p>
-                <p>Computer: 0</p>
+                <p>Number of games: <span>0</span></p>
+                <p>Wins: <span>0</span></p>
+                <!-- <p>Lost: <span>0</span></p> -->
             </div>
             <div class="buttons" id="buttons">
                 <h2>Choose your move:</h2>
-                <div id="play-rock">
-                    <i class="fas fa-hand-rock" data-option="rock"></i>
-                </div>
-                <div id="play-paper">
-                    <i class="fas fa-hand-paper" data-option="paper"></i>
-                </div>
-                <div id="play-scissors">
-                    <i class="fas fa-hand-scissors" data-option="scissors"></i>
-                </div>
+                <i class="fas fa-hand-rock" data-option="rock"></i>
+                <i class="fas fa-hand-paper" data-option="paper"></i>
+                <i class="fas fa-hand-scissors" data-option="scissors"></i>
             </div>
         </div>
     </section>
     <section class="socialmedia">
-        <p class="btn-rules"> Facebook</p>
-        <p class="btn-rules">Twitter</p>
-        <p class="btn-rules">Instagram</p>
+        <p> Facebook</p>
+        <p>Twitter</p>
+        <p>Instagram</p>
     </section>
     <script src="js/functions.js"></script>
     <script src="js/script.js"></script>

@@ -65,13 +65,16 @@ body {
             p{
                 padding: 0 50px;
             }
-            &:hover {
-                transform: translateX(0%);
-            }
+            // &:hover {
+            //     transform: translateX(0%);
+            // }
+
 
 
         }
-
+        .visible {
+            transform: translateX(0%);
+        }
 }
 
 
