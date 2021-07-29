@@ -149,7 +149,7 @@ body {
       align-items: flex-end;
 }
 
-.board .result .buttons .fas {
+.board .result .buttons i {
   border: 2px solid #7b6766;
   background-color: #f3f3f3;
   color: #7b6766;
@@ -160,7 +160,7 @@ body {
   transition: linear .3s;
 }
 
-.board .result .buttons .fas:hover {
+.board .result .buttons i:hover {
   background-color: #7b6766;
   color: #f3f3f3;
 }

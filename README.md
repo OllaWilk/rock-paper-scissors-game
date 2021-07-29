@@ -1,5 +1,5 @@
 # Site is published at
-https://ollawilk.github.io/1_landingPage_florist/
+https://ollawilk.github.io/4_game_paper_rock_scissors/
 
 ## Screenshots
 ![Screenshot](img/screenshot.png)

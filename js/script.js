@@ -12,7 +12,6 @@ const gameSummary = {
 const game = {
     playerHand: null,
     aiHand: null,
-    playerHandHTML: null
 }
 
 /*Get Html elements of player move and add player moove*/
@@ -22,8 +21,12 @@ const hands = [...document.querySelectorAll('.buttons i')];
 function handSelection() {
     console.log(this);
     game.playerHand = this.dataset.option
-
     console.log(game.playerHand);
+
+    hands.forEach(hand => hand.style.color = '');
+    hands.forEach(hand => hand.style.backgroundColor = '');
+    this.style.color = 'white';
+    this.style.backgroundColor = '#7b6766';
 
 }
 
