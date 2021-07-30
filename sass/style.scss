@@ -80,7 +80,7 @@ body {
 
 .board {
 
-    .image-wrapper, .game-title-wrapper  {
+    .image-wrapper {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -110,10 +110,16 @@ body {
 
     }
     .game-title-wrapper {
-        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+        height: 30%;
+        display: flex;
         justify-content: space-between;
-        top: 18%;
-        height: 0;;
+        align-items: center;
+
         .rock, .paper, .scissors {
                     font-size: 80px;
                     line-height: 80px;
@@ -136,7 +142,7 @@ body {
         left: 50%;
         transform: translateX(-50%);
         width: 70%;
-        height: 35%;
+        height: 30%;
         display: flex;
         align-items: center;
         justify-content: space-between;
