@@ -17,9 +17,7 @@ const imgHand = ['img/rock.png', 'img/papper.png', 'img/scissors.png'];
 
 function playerChoice() {
 
-    console.log('this', this);
     game.playerHand = this.dataset.option
-    console.log(game.playerHand);
 
     hands.forEach(hand => hand.style.color = '');
     hands.forEach(hand => hand.style.backgroundColor = '');
@@ -28,17 +26,14 @@ function playerChoice() {
 
 
 }
-function aiChoice() {
 
-    //const aiHand = ;?
-    return aiHand
+function aiChoice() {
+    return hands[Math.floor(Math.random() * 3 + 1)].dataset.option;
 
 }
 
 
 function startGame() {
-    console.log('start gry')
-
     if (!game.playerHand) {
         return alert('Choose your move');
     }
@@ -46,9 +41,9 @@ function startGame() {
     game.aiHand = aiChoice()
 }
 
-document.querySelector('.socialmedia').addEventListener('click', startGame)
+document.querySelector('.startBtn').addEventListener('click', startGame);
 
-hands.forEach(hand => hand.addEventListener('click', handSelection));
+hands.forEach(hand => hand.addEventListener('click', playerChoice));
 
 
 
