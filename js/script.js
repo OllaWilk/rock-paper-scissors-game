@@ -1,5 +1,4 @@
 const gameSummary = {
-
     numbers: 0,
     wins: 0,
     loses: 0,
@@ -9,21 +8,53 @@ const gameSummary = {
 const game = {
     playerHand: '',
     aiHand: '',
+    imgHand: ''
 }
-/*Get Html elements of player move and add player moove*/
+
+/*Get Html elements of player move*/
 
 const hands = [...document.querySelectorAll('.buttons i')];
-const imgHand = ['img/rock.png', 'img/papper.png', 'img/scissors.png'];
+
+const imgPaper = 'img/papper.png';
+const imgRock = 'img/rock.png';
+const imgScissors = 'img/scissors.png'
+
 
 function playerChoice() {
 
+    /*Hand icon */
+
+    console.log(this)
     game.playerHand = this.dataset.option
 
     hands.forEach(hand => hand.style.color = '');
     hands.forEach(hand => hand.style.backgroundColor = '');
+
     this.style.color = 'white';
     this.style.backgroundColor = '#7b6766';
 
+
+    /*Hand jpg*/
+    let imgHandUser = document.querySelector('.imgHandUser');
+
+    if (this.dataset.option == 'rock') {
+        console.log('img kamień')
+
+        imgHandUser.src = imgRock;
+
+        console.log(game.imgHand);
+
+    } else if (this.dataset.option == 'paper') {
+        console.log('img papier')
+
+        imgHandUser.src = imgPaper;
+
+    } else if (this.dataset.option == 'scissors') {
+        console.log('img scissors')
+
+        imgHandUser.src = imgScissors;
+
+    }
 
 }
 
