@@ -147,6 +147,10 @@ body {
   border-top: solid 1px;
 }
 
+.board .result .result-wrap h1 {
+  text-transform: uppercase;
+}
+
 .board .result .buttons {
   display: -ms-flexbox;
   display: flex;

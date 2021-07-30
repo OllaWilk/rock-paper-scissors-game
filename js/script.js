@@ -23,7 +23,6 @@ function playerChoice() {
 
     /*Hand icon */
 
-    console.log('wybor uzytkownika', this)
     game.playerHand = this.dataset.option
 
     hands.forEach(hand => hand.style.color = '');
@@ -55,6 +54,37 @@ function aiChoice() {
 
 }
 
+const imgHandAi = document.querySelector('.imgHandAi');
+const imgHandUser = document.querySelector('.imgHandUser');
+
+
+
+function checkResult(player, ai) {
+    if (player === ai) {
+        return 'Draw !'
+    } else if ((player === 'paper' && ai === "rock") || (player === 'rock' && ai === 'scissors') || (player === "scissors" && ai === 'paper')) {
+        return `${player} beats ${ai}. You Win !`
+    } else {
+        return `${ai} beats ${player}. You Loose !`
+    }
+}
+
+function publiskResult(player, ai, result) {
+
+    document.querySelector('.result-wrap h1').textContent = result;
+
+    document.querySelector('p.numbers span').textContent = ++gameSummary.numbers
+
+    if (result == `${player} beats ${ai}. You Win !`) {
+
+        document.querySelector('p.wins span').textContent = ++gameSummary.wins
+
+    } else if (result == `${ai} beats ${player}. You Loose !`) {
+
+        document.querySelector('p.loose span').textContent = ++gameSummary.loses
+
+    }
+}
 
 function startGame() {
     if (!game.playerHand) {
@@ -62,6 +92,7 @@ function startGame() {
     }
 
     game.aiHand = aiChoice()
+
 
     /*ai hand img*/
 
@@ -77,7 +108,11 @@ function startGame() {
         imgHandAi.src = imgScissors;
 
     }
-    console.log('wybor komputera', game.aiHand)
+
+    const gameResult = checkResult(game.playerHand, game.aiHand);
+    console.log(gameResult);
+
+    publiskResult(game.playerHand, game.aiHand, gameResult);
 }
 
 document.querySelector('.startBtn').addEventListener('click', startGame);
