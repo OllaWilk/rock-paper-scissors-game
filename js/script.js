@@ -8,7 +8,6 @@ const gameSummary = {
 const game = {
     playerHand: '',
     aiHand: '',
-    imgHand: ''
 }
 
 /*Get Html elements of player move*/
@@ -24,7 +23,7 @@ function playerChoice() {
 
     /*Hand icon */
 
-    console.log(this)
+    console.log('wybor uzytkownika', this)
     game.playerHand = this.dataset.option
 
     hands.forEach(hand => hand.style.color = '');
@@ -35,23 +34,15 @@ function playerChoice() {
 
 
     /*Hand jpg*/
-    let imgHandUser = document.querySelector('.imgHandUser');
+    const imgHandUser = document.querySelector('.imgHandUser');
 
     if (this.dataset.option == 'rock') {
-        console.log('img kamień')
-
         imgHandUser.src = imgRock;
 
-        console.log(game.imgHand);
-
     } else if (this.dataset.option == 'paper') {
-        console.log('img papier')
-
         imgHandUser.src = imgPaper;
 
     } else if (this.dataset.option == 'scissors') {
-        console.log('img scissors')
-
         imgHandUser.src = imgScissors;
 
     }
@@ -59,7 +50,8 @@ function playerChoice() {
 }
 
 function aiChoice() {
-    return hands[Math.floor(Math.random() * 3 + 1)].dataset.option;
+
+    return hands[Math.floor(Math.random() * 3)].dataset.option;
 
 }
 
@@ -70,6 +62,22 @@ function startGame() {
     }
 
     game.aiHand = aiChoice()
+
+    /*ai hand img*/
+
+    const imgHandAi = document.querySelector('.imgHandAi');
+
+    if (game.aiHand == 'rock') {
+        imgHandAi.src = imgRock;
+
+    } else if (game.aiHand == 'paper') {
+        imgHandAi.src = imgPaper;
+
+    } else if (game.aiHand == 'scissors') {
+        imgHandAi.src = imgScissors;
+
+    }
+    console.log('wybor komputera', game.aiHand)
 }
 
 document.querySelector('.startBtn').addEventListener('click', startGame);
