@@ -104,7 +104,8 @@ body {
   background-color: transparent;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  top: 35%;
+  top: 18%;
+  height: 0;
 }
 
 .board .game-title-wrapper .rock, .board .game-title-wrapper .paper, .board .game-title-wrapper .scissors {
@@ -169,6 +170,17 @@ body {
   color: #7b6766;
   font-size: 15px;
   margin-bottom: 0;
+}
+
+.board .result .startBtn {
+  background-color: #7b6766;
+  width: 100%;
+  margin: 20px auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  cursor: pointer;
 }
 
 .socialmedia {

@@ -1,24 +1,3 @@
-// class GameMove {
-
-//     constructor(move, img) {
-//         this.move = move;
-//         this.img = img;
-//     }
-
-// }
-
-// const rock = new GameMove('rock', 'img/rock.png');
-// const paper = new GameMove('rock', 'img/papper.png');
-// const scissors = new GameMove('rock', 'img/scissors.png');
-
-
-// class Game {
-//     constructor(playerChoice, aiChoice) {
-//         this.playerChoice = playerChoice;
-//         this.aiChoice = aiChoice;
-//     }
-// }
-
 const gameSummary = {
 
     numbers: 0,

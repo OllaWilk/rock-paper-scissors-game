@@ -112,7 +112,8 @@ body {
     .game-title-wrapper {
         background-color: transparent;
         justify-content: space-between;
-        top: 35%;
+        top: 18%;
+        height: 0;;
         .rock, .paper, .scissors {
                     font-size: 80px;
                     line-height: 80px;
@@ -175,6 +176,15 @@ body {
                 font-size: 15px;
                 margin-bottom: 0;
 
+           }
+
+           .startBtn {
+               background-color: $color-main;
+               width: 100%;
+               margin: 20px auto;
+               display: flex;
+               justify-content: center;
+               cursor: pointer;
            }
     }
 
