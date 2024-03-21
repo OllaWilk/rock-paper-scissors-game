@@ -1,7 +1,7 @@
 # 🎮 "Rock, Paper, Scissors": Game in JavaScript
 The "Rock, Paper, Scissors" game is a simple web application game. Thanks to its implementation in JavaScript, the game operates directly in the web browser, offering an interactive gameplay experience without the need for additional software. Users engage in a challenge against the computer, choosing one of three possible moves: rock, paper, or scissors.
 ## 🙋🏼‍♀️ **Live demo:**
-https://ollawilk.github.io/4_game_paper_rock_scissors/
+[https://ollawilk.github.io/4_game_paper_rock_scissors/](https://ollawilk.github.io/rock-paper-scissors-game/)
 
 ## Screenshots
 ![Screenshot](img/skreenshotRockPaper.png)
